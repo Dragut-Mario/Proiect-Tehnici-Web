@@ -1,0 +1,132 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+		
+            
+		
+
+            
+        }
+	body::before{content: "";
+background-image: url("w.jpg");
+background-size: cover;
+		position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+}
+	
+	
+        header {
+    		
+  
+            color: #fff;
+            
+            text-align: center;
+		font-family: "Papyrus";
+		font-size: 30px;
+  	    
+        }
+	h1 {
+  position: relative;
+ top: 100px;
+  color: #ffffff;  
+  font-size: 14rem;
+  line-height: 0.9;
+  text-align: center;
+animation: colorChange 4s infinite alternate;
+}
+
+	@keyframes colorChange {
+            0% {
+                color: #7FFF00;
+                font-size: 50px;
+            }
+            50% {
+                color: #FFFF00;
+		font-size: 70px;
+            }
+            100% {
+		color: #4169E1;
+		font-size: 50px;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .wonder {
+            margin-bottom: 40px;
+        }
+
+        .wonder h2 {
+            text-align: center;
+        }
+
+        .wonder p {
+            text-align: justify;
+        }
+
+        
+        .dropbtn {
+  border-radius: 12px;
+  background-color: #6B8E23;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  border-radius: 12px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+  border-radius: 12px;
+  opacity: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+   transition: all linear 0.3s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: all linear 1s;
+   opacity: 1;
+}
+
+.dropdown:hover .dropbtn {
+   transition: all linear 1s;
+  cursor: auto;
+  background-color: #495d29;
+ 
+}
+@media only screen and (max-width: 600px) {
+            .dropdown {
+                max-width: 300px; 
+            }
+        }
